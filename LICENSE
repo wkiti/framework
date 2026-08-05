@@ -1,15 +1,28 @@
-MIT License
+WKITI SOURCE AVAILABLE LICENSE v1.0
 
-Copyright (c) 2026 Webkiti
+Copyright (c) 2026 Your Name or Company.
+All Rights Reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. Permission is granted to use the Wkiti Framework for personal,
+educational, research, and commercial application development.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+2. You may build, compile, and deploy applications using Wkiti.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND...
+3. You may distribute applications built with Wkiti.
+
+The following are NOT permitted without prior written permission
+from the copyright holder:
+
+- Modifying the Wkiti Framework source code.
+- Redistributing modified versions of the framework.
+- Publishing forks of the framework.
+- Selling or relicensing the framework.
+- Removing or altering copyright notices.
+- Claiming authorship of the framework.
+
+THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.
+
+For commercial licensing or permissions beyond this license,
+
+contact:
+wkiti0001@gmail.com
