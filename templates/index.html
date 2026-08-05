@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- HEADER NAVBAR -->
+        <header class="navbar">
+            <div class="logo-brand">
+                <div class="logo-badge">&gt;_</div>
+                <span class="logo-text">WKITI</span>
+            </div>
+            <div class="status-pill">
+                <span class="pulse-dot"></span>
+                <span>{{status}}</span>
+            </div>
+        </header>
+
+        <!-- HERO SECTION -->
+        <main class="hero-section">
+            <div class="hero-badge">⚡ Powered by Native C++ Engine</div>
+            <h1 class="hero-title">High Performance Web Development in <span class="gradient-text">C++</span></h1>
+            <p class="hero-subtitle">Your standalone enterprise application created with Wkiti Framework. Fast, secure, and production-ready.</p>
+
+            <!-- INTERACTIVE C++ API CARD -->
+            <div class="interactive-card">
+                <div class="card-header">
+                    <h3>Interactive C++ Backend Counter</h3>
+                    <span class="api-tag">REST API Active</span>
+                </div>
+                <p>Click below to send an asynchronous POST request to your compiled C++ backend:</p>
+                
+                <div class="counter-box">
+                    <span class="counter-label">Server Counter:</span>
+                    <span id="click-counter" class="counter-value">0</span>
+                </div>
+
+                <div class="button-group">
+                    <button id="btn-increment" class="btn btn-primary">Increment Counter +1</button>
+                    <button id="btn-refresh" class="btn btn-secondary">Refresh Stats</button>
+                </div>
+            </div>
+
+            <!-- FEATURE GRID -->
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="icon">🚀</div>
+                    <h4>Sub-Millisecond Speed</h4>
+                    <p>Zero interpreter overhead with compiled native binary execution.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🔒</div>
+                    <h4>OpenSSL Security</h4>
+                    <p>Built-in SHA-256 password hashing and TLS 1.3 encryption.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🗄️</div>
+                    <h4>SQLite ORM</h4>
+                    <p>Type-safe prepared statements protecting against SQL injection.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 {{title}} — Built with Wkiti C++ Framework</p>
+        </footer>
+    </div>
+</body>
+</html>
