@@ -1,6 +1,3 @@
-### File 3: `docs/04_SECURITY_AND_HTTPS.md`
-
-```markdown
 # 🔒 Security, Hashing, & HTTPS
 
 Wkiti follows "Defense in Depth" principles, enforcing security at the input, application, transport, and storage levels.
