@@ -12,6 +12,7 @@ Deploying a Wkiti application is fast and lightweight because C++ compiles into 
 Always compile for production using the `-O3` optimization flag. This enables compiler vectorization, loop unrolling, and function inlining, accelerating execution speed by **300%–500%**.
 
 ### Windows (MSYS2 UCRT64) Release Build:
+
 ```powershell
 # 1. Stop any old instance
 Stop-Process -Name "wkiti_app" -Force
@@ -22,7 +23,7 @@ src/main.cpp src/Server.cpp src/Database.cpp src/Model.cpp src/Request.cpp src/R
 -o wkiti_app.exe `
 -L"C:/msys64/ucrt64/lib" -lws2_32 -lssl -lcrypto -lcrypt32
 
-2. Production Bundle Layout
+3. Production Bundle Layout
 Create a folder containing only the binary assets required for execution:
 
 
@@ -34,20 +35,18 @@ Wkiti-Production/
 ├── templates/          <-- HTML Files
 └── public/             <-- Static CSS, JS, Image
 
-3. Deployment Options
+4. Deployment Options
 Option A: Windows Background Service
 Run silently as a background task on a Windows Server:
 
 code<>
 Powershell
-
 Start-Process -FilePath ".\wkiti_app.exe" -WindowStyle Hidden
 Option B: Linux Server (Ubuntu / Debian / RHEL)
 On Linux, compile using native GCC:
 
 code<>
 Bash
-
 g++ -O3 -std=c++17 -I./include src/*.cpp src/sqlite3.c -o wkiti_app -pthread -lssl -lcrypto
 Create a Systemd Service (/etc/systemd/system/wkiti.service):
 
@@ -73,7 +72,7 @@ Bash
 sudo systemctl daemon-reload
 sudo systemctl enable --now wkiti
 
-4. Real-Time Performance Monitoring
+5. Real-Time Performance Monitoring
 Monitor live latency and request metrics via Wkiti's benchmarking endpoint:
 
 code<>
