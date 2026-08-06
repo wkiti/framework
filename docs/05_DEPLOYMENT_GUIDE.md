@@ -1,6 +1,3 @@
-### File 4: `docs/05_DEPLOYMENT_GUIDE.md`
-
-```markdown
 # 🚀 Production Deployment Guide
 
 Deploying a Wkiti application is fast and lightweight because C++ compiles into a **standalone native executable** with zero external runtime dependencies (no Node.js, Python, or JVM required).
